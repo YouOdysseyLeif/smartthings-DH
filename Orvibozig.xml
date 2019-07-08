@@ -1,0 +1,24 @@
+<cluster>
+    <name>Scenes</name>
+    <code>0x0005</code>
+    <define>SCENES_CLUSTER</define>
+    <attribute source="server" code="0x0000" define="SCENE_COUNT" mandatory="true" name="scene count">TRUE</attribute>
+    <attribute source="server" code="0x0001" define="CURRENT_SCENE" mandatory="true" name="current scene">TRUE</attribute>
+    <attribute source="server" code="0x0002" define="CURRENT_GROUP" mandatory="true" name="current group">TRUE</attribute>
+    <attribute source="server" code="0x0003" define="SCENE_VALID" mandatory="true" name="scene valid">TRUE</attribute>
+    <attribute source="server" code="0x0004" define="SCENE_NAME_SUPPORT" mandatory="true" name="name support">TRUE</attribute>
+    <attribute source="server" code="0x0005" define="LAST_CONFIGURED_BY" mandatory="false" name="last configured by">FALSE</attribute>
+    <command receivedBy="server" code="0x00" name="AddScene" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x01" name="ViewScene" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x02" name="RemoveScene" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x03" name="RemoveAllScenes" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x04" name="StoreScene" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x05" name="RecallScene" mandatory="true">TRUE</command>
+    <command receivedBy="server" code="0x06" name="GetSceneMembership" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x00" name="AddSceneResponse" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x01" name="ViewSceneResponse" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x02" name="RemoveSceneResponse" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x03" name="RemoveAllScenesResponse" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x04" name="StoreSceneResponse" mandatory="true">TRUE</command>
+    <command receivedBy="client" code="0x06" name="GetSceneMembershipResponse" mandatory="true">TRUE</command>
+</cluster>
