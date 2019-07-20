@@ -15,7 +15,7 @@
  */
 
  /*
-Modified by Leif Gilbertson, July 20, 2019
+Modified by Leif G, July 20, 2019
 To attempt a better handler for the Orvibo 7 button scene controller
 Getting buttons setup, look at scene indicators later
 */
@@ -37,7 +37,7 @@ import groovy.json.JsonOutput
 import physicalgraph.zigbee.zcl.DataType
 
 metadata {
-	definition (name: "Zigbee Multi Button", namespace: "smartthings", author: "SmartThings", mnmn: "SmartThings", vid: "generic-4-button") {
+	definition (name: "Livingwise/Orvibo Multi Button", namespace: "youodysseyleif", author: "LeifG", mnmn: "SmartThings", vid: "generic-7-button") {
 		capability "Actuator"
 		capability "Battery"
 		capability "Button"
