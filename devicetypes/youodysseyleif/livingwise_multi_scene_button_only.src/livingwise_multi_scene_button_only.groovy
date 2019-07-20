@@ -238,7 +238,7 @@ private getButtonMap() {[
 				"06" : 6,
 				"07" : 7
 		]
-]}
+}
 private getModelNumberOfButtons() {[
 		"3450-L" : 4,
 		"3450-L2" : 4,
